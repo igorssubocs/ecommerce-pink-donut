@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom"
-import logo from '../../assets/logo.png'
+import { LOGO } from '../../assets/assets'
 
 const Footer = () => {
 	const navigationLinks = [
@@ -30,11 +30,10 @@ const Footer = () => {
 			<div className="container py-5 px-4 sm:px-4 md:px-8 lg:px-10 xl:px-12 grid gap-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 					<img 
-						src={logo} 
+						src={LOGO} 
 						alt="Logo" 
 						className="w-24 h-24 mx-auto md:mx-0"
 					/>
-
 					<div className="flex flex-col sm:flex-row justify-between gap-5">
 						<div>
 							<h3 className="font-medium mb-2 text-center sm:text-left">Navigation</h3>

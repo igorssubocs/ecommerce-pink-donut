@@ -2,7 +2,7 @@ import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import SidebarMenu from "./SidebarMenu"
 import { ShoppingCart, Menu, User } from 'lucide-react'
-import logo from '../../assets/logo.png'
+import { LOGO } from '../../assets/assets'
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +21,7 @@ export default function Header() {
 		<header className="w-full relative flex justify-center">
 			<div className="container py-5 px-4 sm:px-4 md:px-8 lg:px-10 xl:px-12 flex justify-between items-center">
 				<NavLink to="/" className="text-2xl font-bold text-pink-400" title="Logo">
-					<img src={logo} alt="" className="w-16 h-16" />
+					<img src={LOGO} alt="" className="w-16 h-16" />
 				</NavLink>
 
 				<nav className="hidden md:flex gap-2 bg-white p-1 rounded-full">
