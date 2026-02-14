@@ -27,13 +27,15 @@ const Footer = () => {
 
 	return (
 		<footer className="w-full flex justify-center">
-			<div className="container py-5 px-4 sm:px-4 md:px-8 lg:px-10 xl:px-12 grid gap-20">
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-					<img 
-						src={LOGO} 
-						alt="Logo" 
-						className="w-24 h-24 mx-auto md:mx-0"
-					/>
+			<div className="container py-5 px-4 sm:px-4 md:px-8 lg:px-10 xl:px-12 grid space-y-20">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+					<NavLink to="/" className="text-2xl font-bold text-pink-400" title="Logo">
+						<img
+							src={LOGO} 
+							alt="Logo" 
+							className="w-24 h-24 mx-auto md:mx-0" 
+						/>
+					</NavLink>
 					<div className="flex flex-col sm:flex-row justify-between gap-5">
 						<div>
 							<h3 className="font-medium mb-2 text-center sm:text-left">Navigation</h3>
@@ -84,7 +86,7 @@ const Footer = () => {
 
 				<div className="flex flex-col sm:flex-row justify-center sm:justify-between text-center gap-2 text-sm">
 					<p>&copy; 2025 Donut Shop. All rights reserved.</p>
-					<div className="flex gap-10">
+					<div className="flex gap-10 justify-center">
 						{legalLinks.map(link => (
 							<NavLink key={link.to} to={link.to} className="hover:text-pink-400">
 								{link.name}

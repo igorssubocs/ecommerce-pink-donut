@@ -31,7 +31,7 @@ const [openIndex, setOpenIndex] = useState(null)
 						<div key={index}>
 							<button
 								onClick={() => toggleIndex(index)}
-								className={`w-full text-left p-5 sm:p-7 font-medium sm:text-lg text-gray-800 flex justify-between items-center bg-white transition-all
+								className={`w-full text-left p-7 font-medium sm:text-lg text-gray-800 flex justify-between items-center bg-white transition-all
 									${
 										openIndex === index
 										? "rounded-t-2xl text-pink-400"
@@ -49,11 +49,11 @@ const [openIndex, setOpenIndex] = useState(null)
 							</button>
 
 							<div
-							className={`overflow-hidden bg-white transition-all duration-300 ${
-								openIndex === index
-								? "max-h-96 px-5 sm:px-6 pb-5 sm:pb-6 rounded-b-2xl"
-								: "max-h-0"
-							}`}
+								className={`overflow-hidden bg-white transition-all duration-300 ${
+									openIndex === index
+									? "max-h-96 px-7 pb-7 rounded-b-2xl"
+									: "max-h-0"
+								}`}
 							>
 								<p className="text-gray-600 text-sm sm:text-base">{item.a}</p>
 							</div>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom';
 import { X } from 'lucide-react'
 
 const SidebarMenu = ({ isOpen, setIsOpen, menuItems }) => {

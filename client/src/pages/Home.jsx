@@ -9,7 +9,9 @@ const Home = () => {
 			<section className="w-full rounded-full" id="ad">
 				<video src={AD} autoPlay loop muted playsInline className="w-full h-auto object-cover rounded-3xl"/>
 			</section>
-			<Faq />
+			<div className="" id="#faq">
+				<Faq />
+			</div>
 		</div>
 	)
 }
