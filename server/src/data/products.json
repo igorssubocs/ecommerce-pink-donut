@@ -1,0 +1,982 @@
+{
+	"products": [
+		{
+			"id": 0,
+			"name": "Strawberry Donut Box",
+			"category": "Donuts",
+			"flavor": "Strawberry",
+			"description": "Classic strawberry donuts with a bright pink glaze made from natural berry extract. Soft dough and sweet fruity aroma.",
+			"price": 4.5,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-strawberry-6-1.png"
+			],
+			"path": "strawberry-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 250,
+					"fat": "12g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1500,
+					"fat": "72g",
+					"carbs": "192g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Strawberry Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false },
+				{ "name": "Natural Berry Extract", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 1,
+			"name": "Strawberry Donut Box",
+			"category": "Donuts",
+			"flavor": "Strawberry",
+			"description": "Classic strawberry donuts with a bright pink glaze. Perfect for sharing with friends and family.",
+			"price": 7.5,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-strawberry-12-1.png"
+			],
+			"path": "strawberry-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 250,
+					"fat": "12g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 3000,
+					"fat": "144g",
+					"carbs": "384g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Strawberry Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false },
+				{ "name": "Natural Berry Extract", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 2,
+			"name": "Vanilla Donut Box",
+			"category": "Donuts",
+			"flavor": "Vanilla",
+			"description": "Classic vanilla donuts with Madagascar vanilla bean glaze. Light, fluffy, and aromatic.",
+			"price": 5.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-vanilla-6-1.png"
+			],
+			"path": "vanilla-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 240,
+					"fat": "11g",
+					"carbs": "30g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1440,
+					"fat": "66g",
+					"carbs": "180g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Vanilla Extract", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 3,
+			"name": "Vanilla Donut Box",
+			"category": "Donuts",
+			"flavor": "Vanilla",
+			"description": "Classic vanilla donuts. Perfect for breakfast or afternoon tea.",
+			"price": 8.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-vanilla-12-1.png"
+			],
+			"path": "vanilla-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 240,
+					"fat": "11g",
+					"carbs": "30g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 2880,
+					"fat": "132g",
+					"carbs": "360g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Vanilla Extract", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 4,
+			"name": "Peanut Butter Donut Box",
+			"category": "Donuts",
+			"flavor": "Peanut Butter",
+			"description": "Creamy peanut butter donuts with smooth peanut butter glaze. Rich and satisfying.",
+			"price": 6.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-peanut-butter-6-1.png"
+			],
+			"path": "peanut-butter-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 280,
+					"fat": "14g",
+					"carbs": "33g",
+					"protein": "5g"
+				},
+				"perBox": {
+					"calories": 1680,
+					"fat": "84g",
+					"carbs": "198g",
+					"protein": "30g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Peanut Butter", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 5,
+			"name": "Peanut Butter Donut Box",
+			"category": "Donuts",
+			"flavor": "Peanut Butter",
+			"description": "Creamy peanut butter donuts. Perfect for peanut butter lovers.",
+			"price": 9.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-peanut-butter-12-1.png"
+			],
+			"path": "peanut-butter-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 280,
+					"fat": "14g",
+					"carbs": "33g",
+					"protein": "5g"
+				},
+				"perBox": {
+					"calories": 3360,
+					"fat": "168g",
+					"carbs": "396g",
+					"protein": "60g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Peanut Butter", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 6,
+			"name": "Lemon Zest Donut Box",
+			"category": "Donuts",
+			"flavor": "Lemon Zest",
+			"description": "Zesty lemon donuts with tangy citrus glaze. Fresh and refreshing.",
+			"price": 4.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-lemon-zest-6-1.png"
+			],
+			"path": "lemon-zest-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 230,
+					"fat": "10g",
+					"carbs": "31g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1380,
+					"fat": "60g",
+					"carbs": "186g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Lemon Zest", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Lemon Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 7,
+			"name": "Lemon Zest Donut Box",
+			"category": "Donuts",
+			"flavor": "Lemon Zest",
+			"description": "Zesty lemon donuts. Made with fresh lemon zest and juice.",
+			"price": 7.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-lemon-zest-12-1.png",
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-lemon-zest-12-2.png"
+			],
+			"path": "lemon-zest-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 230,
+					"fat": "10g",
+					"carbs": "31g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 2760,
+					"fat": "120g",
+					"carbs": "372g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Lemon Zest", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Lemon Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 8,
+			"name": "Cookies and Cream Donut Box",
+			"category": "Donuts",
+			"flavor": "Cookies and Cream",
+			"description": "Cookies and cream donuts with crushed cookie pieces. Sweet and crunchy.",
+			"price": 5.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-cookies-and-cream-6-1.png"
+			],
+			"path": "cookies-and-cream-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 270,
+					"fat": "13g",
+					"carbs": "34g",
+					"protein": "4g"
+				},
+				"perBox": {
+					"calories": 1620,
+					"fat": "78g",
+					"carbs": "204g",
+					"protein": "24g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Crushed Cookies", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Cream Cheese", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 9,
+			"name": "Cookies and Cream Donut Box",
+			"category": "Donuts",
+			"flavor": "Cookies and Cream",
+			"description": "Cookies and cream donuts. Perfect for cookie lovers.",
+			"price": 8.5,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-cookies-and-cream-12-1.png"
+			],
+			"path": "cookies-and-cream-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 270,
+					"fat": "13g",
+					"carbs": "34g",
+					"protein": "4g"
+				},
+				"perBox": {
+					"calories": 3240,
+					"fat": "156g",
+					"carbs": "408g",
+					"protein": "48g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Crushed Cookies", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Cream Cheese", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 10,
+			"name": "Coconut Dream Donut Box",
+			"category": "Donuts",
+			"flavor": "Coconut Dream",
+			"description": "Tropical coconut donuts with shredded coconut topping. Island paradise in every bite.",
+			"price": 3.5,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-coconut-dream-6-1.png",
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-coconut-dream-6-2.png"
+			],
+			"path": "coconut-dream-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 260,
+					"fat": "13g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1560,
+					"fat": "78g",
+					"carbs": "192g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Shredded Coconut", "isAllergen": false },
+				{ "name": "Coconut Milk", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 11,
+			"name": "Coconut Dream Donut Box",
+			"category": "Donuts",
+			"flavor": "Coconut Dream",
+			"description": "Tropical coconut donuts. Perfect for coconut lovers.",
+			"price": 6.5,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-coconut-dream-12-1.png",
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-coconut-dream-12-2.png"
+			],
+			"path": "coconut-dream-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 260,
+					"fat": "13g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 3120,
+					"fat": "156g",
+					"carbs": "384g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Shredded Coconut", "isAllergen": false },
+				{ "name": "Coconut Milk", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 12,
+			"name": "Chocolate Donut Box",
+			"category": "Donuts",
+			"flavor": "Chocolate",
+			"description": "Rich chocolate donuts with premium dark chocolate glaze. Chocolate lover's dream.",
+			"price": 4.5,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-chocolate-6-1.png"
+			],
+			"path": "chocolate-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 270,
+					"fat": "14g",
+					"carbs": "33g",
+					"protein": "4g"
+				},
+				"perBox": {
+					"calories": 1620,
+					"fat": "84g",
+					"carbs": "198g",
+					"protein": "24g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Cocoa Powder", "isAllergen": false },
+				{ "name": "Chocolate", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 13,
+			"name": "Chocolate Donut Box",
+			"category": "Donuts",
+			"flavor": "Chocolate",
+			"description": "Rich chocolate donuts. Made with Belgian cocoa.",
+			"price": 8.5,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-chocolate-12-1.png"
+			],
+			"path": "chocolate-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 270,
+					"fat": "14g",
+					"carbs": "33g",
+					"protein": "4g"
+				},
+				"perBox": {
+					"calories": 3240,
+					"fat": "168g",
+					"carbs": "396g",
+					"protein": "48g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Cocoa Powder", "isAllergen": false },
+				{ "name": "Chocolate", "isAllergen": true },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 14,
+			"name": "Caramel Donut Box",
+			"category": "Donuts",
+			"flavor": "Caramel",
+			"description": "Decadent caramel donuts with sea salt caramel drizzle. Sweet and salty perfection.",
+			"price": 4.5,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-caramel-6-1.png",
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-caramel-6-2.png"
+			],
+			"path": "caramel-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 280,
+					"fat": "13g",
+					"carbs": "35g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1680,
+					"fat": "78g",
+					"carbs": "210g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Caramel", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Sea Salt", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 15,
+			"name": "Caramel Donut Box",
+			"category": "Donuts",
+			"flavor": "Caramel",
+			"description": "Decadent caramel donuts. Absolutely irresistible.",
+			"price": 8.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-caramel-12-1.png"
+			],
+			"path": "caramel-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 280,
+					"fat": "13g",
+					"carbs": "35g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 3360,
+					"fat": "156g",
+					"carbs": "420g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Caramel", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Sea Salt", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 16,
+			"name": "Blueberry Donut Box",
+			"category": "Donuts",
+			"flavor": "Blueberry",
+			"description": "Fresh blueberry donuts with blueberry glaze. Bursting with berry flavor.",
+			"price": 5.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-blueberry-6-1.png"
+			],
+			"path": "blueberry-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 245,
+					"fat": "11g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1470,
+					"fat": "66g",
+					"carbs": "192g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Fresh Blueberries", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Blueberry Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 17,
+			"name": "Blueberry Donut Box",
+			"category": "Donuts",
+			"flavor": "Blueberry",
+			"description": "Fresh blueberry donuts. Made with real blueberries.",
+			"price": 8.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-blueberry-12-1.png"
+			],
+			"path": "blueberry-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 245,
+					"fat": "11g",
+					"carbs": "32g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 2940,
+					"fat": "132g",
+					"carbs": "384g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Fresh Blueberries", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Blueberry Glaze", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 18,
+			"name": "Birthday Sprinkle Donut Box",
+			"category": "Donuts",
+			"flavor": "Birthday Sprinkle",
+			"description": "Festive birthday cake donuts with rainbow sprinkles. Perfect for celebrations.",
+			"price": 5.0,
+			"currency": "USD",
+			"countInBox": 6,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-birthday-sprinkle-6-1.png"
+			],
+			"path": "birthday-sprinkle-donut-box-6",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 260,
+					"fat": "12g",
+					"carbs": "34g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 1560,
+					"fat": "72g",
+					"carbs": "204g",
+					"protein": "18g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Rainbow Sprinkles", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Vanilla Extract", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		},
+		{
+			"id": 19,
+			"name": "Birthday Sprinkle Donut Box",
+			"category": "Donuts",
+			"flavor": "Birthday Sprinkle",
+			"description": "Festive birthday cake donuts. Make every day a celebration.",
+			"price": 8.0,
+			"currency": "USD",
+			"countInBox": 12,
+			"inStock": true,
+			"images": [
+				"https://ziuszhqyrnzjfqipamvg.supabase.co/storage/v1/object/public/products/donuts/donut-birthday-sprinkle-12-1.png"
+			],
+			"path": "birthday-sprinkle-donut-box-12",
+			"nutritionalInfo": {
+				"perDonut": {
+					"calories": 260,
+					"fat": "12g",
+					"carbs": "34g",
+					"protein": "3g"
+				},
+				"perBox": {
+					"calories": 3120,
+					"fat": "144g",
+					"carbs": "408g",
+					"protein": "36g"
+				}
+			},
+			"ingredients": [
+				{ "name": "Wheat Flour", "isAllergen": true },
+				{ "name": "Sugar", "isAllergen": false },
+				{ "name": "Rainbow Sprinkles", "isAllergen": false },
+				{ "name": "Eggs", "isAllergen": true },
+				{ "name": "Milk", "isAllergen": true },
+				{ "name": "Butter", "isAllergen": true },
+				{ "name": "Vanilla Extract", "isAllergen": false },
+				{ "name": "Baking Powder", "isAllergen": false }
+			],
+			"storageAndCare": {
+				"temperature": "Store at room temperature (18–22°C)",
+				"shelfLife": "Best consumed within 48 hours",
+				"instructions": [
+					"Keep in a dry and cool place",
+					"Avoid direct sunlight",
+					"Do not refrigerate to maintain softness",
+					"Close the box tightly after opening"
+				]
+			}
+		}
+	]
+}
