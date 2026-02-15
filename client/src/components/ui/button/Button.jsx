@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 const Button = ({ children, to, href, className = "", ...props }) => {
-	const baseStyle = "inline-flex items-center px-10 py-4 rounded-full transition-all duration-300"
+	const baseStyle = "inline-flex items-center justify-center px-10 py-4 transition-all duration-300"
 
 	if (to) {
 		return <NavLink to={to} className={`${baseStyle} ${className}`} {...props}>{children}</NavLink>

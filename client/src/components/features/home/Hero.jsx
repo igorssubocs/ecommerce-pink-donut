@@ -14,10 +14,10 @@ const Hero = () => {
 				and discover your new favorite flavor today!
 			</p>
 			<div className="flex gap-5 justify-center">
-				<Button to="/catalog" className="bg-pink-400 text-white hover:bg-pink-500">
+				<Button to="/catalog" className="bg-pink-400 text-white hover:bg-pink-500 rounded-full">
 					Order Now
 				</Button>
-				<Button href="mailto:info@donut-shop.com" className="border-2 border-pink-400 text-pink-400 hover:bg-pink-50">
+				<Button href="mailto:info@donut-shop.com" className="border-2 border-pink-400 text-pink-400 hover:bg-pink-50 rounded-full">
 					Contact Us
 				</Button>
 			</div>
