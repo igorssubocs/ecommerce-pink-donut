@@ -11,7 +11,7 @@ import Checkout from "../pages/Checkout"
 import Product from "../pages/Product"
 import NotFound from "../pages/NotFound"
 
-export default function AppRoutes() {
+const AppRoutes = () => {
 	return (
 		<Routes>
 			<Route path='/' element={<Layout />}>
@@ -21,10 +21,12 @@ export default function AppRoutes() {
 				<Route path="/profile/:id" element={<Profile />} />
 				<Route path="/privacy" element={<Privacy />} />
 				<Route path="/terms" element={<Terms />} />
-				<Route path="/product/:id" element={<Product />} />
+				<Route path="/product/:path" element={<Product />} />
 				<Route path="/checkout" element={<Checkout />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>
 	)
 }
+
+export default AppRoutes
