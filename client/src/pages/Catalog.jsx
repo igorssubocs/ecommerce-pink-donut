@@ -10,7 +10,7 @@ import EmptyState from "../components/features/catalog/EmptyState"
 import Filters from "../components/features/filters/Filters"
 import Button from "../components/ui/button/Button"
 
-export default function CatalogPage() {
+const Catalog = () => {
 	const { products, loading } = useProducts()
 	const [visible, setVisible] = useState(9)
 
@@ -93,3 +93,5 @@ export default function CatalogPage() {
 		</section>
 	)
 }
+
+export default Catalog

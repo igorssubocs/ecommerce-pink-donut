@@ -1,4 +1,4 @@
-export default function FilterPrice({ register }) {
+const FilterPrice = ({ register }) => {
 	return (
 		<div>
 			<h2 className="font-medium text-lg mb-5">Price Range</h2>
@@ -29,3 +29,5 @@ export default function FilterPrice({ register }) {
 		</div>
 	)
 }
+
+export default FilterPrice

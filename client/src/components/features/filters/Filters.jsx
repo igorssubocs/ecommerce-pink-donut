@@ -2,7 +2,7 @@ import { useFlavors } from "../../../hooks/useFlavors"
 import FilterFlavor from "./FilterFlavor"
 import FilterPrice from "./FilterPrice"
 
-export default function Filters({ register, watch, setValue, onReset }) {
+const Filters = ({ register, watch, setValue, onReset }) => {
 	const flavors = useFlavors()
 
 	return (
@@ -30,3 +30,5 @@ export default function Filters({ register, watch, setValue, onReset }) {
 		</div>
 	)
 }
+
+export default Filters

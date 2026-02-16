@@ -1,4 +1,4 @@
-export default function SortDropdown({ register }) {
+const SortDropdown = ({ register }) => {
 	return (
 		<select
 			{...register("sort")}
@@ -12,3 +12,5 @@ export default function SortDropdown({ register }) {
 		</select>
 	)
 }
+
+export default SortDropdown

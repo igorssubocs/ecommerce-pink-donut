@@ -1,4 +1,4 @@
-export default function FilterFlavor({ flavors, watch, setValue }) {
+const FilterFlavor = ({ flavors, watch, setValue }) => {
 	const selected = watch("flavors") || []
 
 	const toggle = (flavor) => {
@@ -29,3 +29,5 @@ export default function FilterFlavor({ flavors, watch, setValue }) {
 		</div>
 	)
 }
+
+export default FilterFlavor
