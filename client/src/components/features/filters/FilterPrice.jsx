@@ -8,7 +8,7 @@ const FilterPrice = ({ register }) => {
 					<input
 						type="number"
 						{...register("minPrice", { valueAsNumber: true })}
-						className="w-full p-4 border rounded-2xl outline-gray-600"
+						className="w-full p-4 border rounded-2xl outline-pink-400"
 						placeholder="0"
 						min="0"
 						step="0.5"
@@ -19,7 +19,7 @@ const FilterPrice = ({ register }) => {
 					<input
 						type="number"
 						{...register("maxPrice", { valueAsNumber: true })}
-						className="w-full p-4 border rounded-2xl outline-gray-600"
+						className="w-full p-4 border rounded-2xl outline-pink-400"
 						placeholder="20"
 						min="0"
 						step="0.5"

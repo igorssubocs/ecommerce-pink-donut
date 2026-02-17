@@ -8,7 +8,7 @@ const SearchBar = ({ register }) => {
 				type="text"
 				placeholder="Search products..."
 				{...register("search")}
-				className="w-full pl-12 h-14 pr-4 rounded-2xl border outline-gray-600"
+				className="w-full pl-12 h-14 pr-4 rounded-2xl border outline-pink-400"
 			/>
 		</div>
 	)

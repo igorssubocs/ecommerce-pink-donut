@@ -4,7 +4,7 @@ import SidebarMenu from "./SidebarMenu"
 import { ShoppingCart, Menu, User } from 'lucide-react'
 import { LOGO } from '../../assets/assets'
 
-export default function Header() {
+const Header = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const menuItems = [
@@ -60,3 +60,5 @@ export default function Header() {
 		</header>
 	)
 }
+
+export default Header

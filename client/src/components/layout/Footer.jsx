@@ -11,9 +11,9 @@ const Footer = () => {
 	]
 
 	const contactLinks = [
-		{ name: "Telegram", href: "https://telegram.com/" },
-		{ name: "Instagram", href: "https://instagram.com/" },
-		{ name: "X", href: "https://x.com/" },
+		{ name: "Telegram", href: "https://telegram.com/u_r_o_p_b" },
+		{ name: "Instagram", href: "https://instagram.com/isubocs" },
+		{ name: "X", href: "https://x.com/igorssubocs" },
 	]
 
 	const supportLinks = [
