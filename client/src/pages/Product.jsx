@@ -54,7 +54,7 @@ export default function Product() {
 					<Button
 						onClick={() => console.log('Add to cart:', product)}
 						disabled={!product.inStock}
-						className="w-full bg-pink-400 text-white rounded-full hover:bg-pink-500 disabled:opacity-50"
+						className="w-full bg-pink-400 text-white rounded-full hover:bg-pink-500"
 					>
 						{product.inStock ? 'Add to Cart' : 'Out of Stock'}
 					</Button>
