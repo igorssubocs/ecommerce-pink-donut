@@ -1,6 +1,6 @@
-import customer1 from "./customers/customer1.png"
-import customer2 from "./customers/customer2.png"
-import customer3 from "./customers/customer3.png"
+import customer1 from "./customers/customer1.webp"
+import customer2 from "./customers/customer2.webp"
+import customer3 from "./customers/customer3.webp"
 
 import logo from './logo.png'
 

@@ -9,8 +9,7 @@ const Header = () => {
 
 	const menuItems = [
 		{ name: "Home", path: "/" },
-		{ name: "Catalog", path: "/catalog" },
-		{ name: "Team", path: "/team" }
+		{ name: "Catalog", path: "/catalog" }
 	]
 
 	const navLinkClass = ({ isActive }) =>
