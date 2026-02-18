@@ -19,7 +19,7 @@ const FilterFlavor = ({ flavors, watch, setValue }) => {
 								type="checkbox"
 								checked={selected.includes(flavor)}
 								onChange={() => toggle(flavor)}
-								className="w-5 h-5 accent-pink-500"
+								className="w-5 h-5 accent-pink-400"
 							/>
 							<span>{flavor}</span>
 						</label>
