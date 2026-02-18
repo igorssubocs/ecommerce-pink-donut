@@ -7,7 +7,7 @@
 			"flavor": "Strawberry",
 			"description": "Classic strawberry donuts with a bright pink glaze made from natural berry extract. Soft dough and sweet fruity aroma.",
 			"price": 4.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -56,7 +56,7 @@
 			"flavor": "Strawberry",
 			"description": "Classic strawberry donuts with a bright pink glaze. Perfect for sharing with friends and family.",
 			"price": 7.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -105,7 +105,7 @@
 			"flavor": "Vanilla",
 			"description": "Classic vanilla donuts with Madagascar vanilla bean glaze. Light, fluffy, and aromatic.",
 			"price": 5.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -153,7 +153,7 @@
 			"flavor": "Vanilla",
 			"description": "Classic vanilla donuts. Perfect for breakfast or afternoon tea.",
 			"price": 8.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -201,7 +201,7 @@
 			"flavor": "Peanut Butter",
 			"description": "Creamy peanut butter donuts with smooth peanut butter glaze. Rich and satisfying.",
 			"price": 6.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -249,7 +249,7 @@
 			"flavor": "Peanut Butter",
 			"description": "Creamy peanut butter donuts. Perfect for peanut butter lovers.",
 			"price": 9.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -297,7 +297,7 @@
 			"flavor": "Lemon Zest",
 			"description": "Zesty lemon donuts with tangy citrus glaze. Fresh and refreshing.",
 			"price": 4.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -396,7 +396,7 @@
 			"flavor": "Cookies and Cream",
 			"description": "Cookies and cream donuts with crushed cookie pieces. Sweet and crunchy.",
 			"price": 5.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -445,7 +445,7 @@
 			"flavor": "Cookies and Cream",
 			"description": "Cookies and cream donuts. Perfect for cookie lovers.",
 			"price": 8.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -494,7 +494,7 @@
 			"flavor": "Coconut Dream",
 			"description": "Tropical coconut donuts with shredded coconut topping. Island paradise in every bite.",
 			"price": 3.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -543,7 +543,7 @@
 			"flavor": "Coconut Dream",
 			"description": "Tropical coconut donuts. Perfect for coconut lovers.",
 			"price": 6.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -592,7 +592,7 @@
 			"flavor": "Chocolate",
 			"description": "Rich chocolate donuts with premium dark chocolate glaze. Chocolate lover's dream.",
 			"price": 4.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -641,7 +641,7 @@
 			"flavor": "Chocolate",
 			"description": "Rich chocolate donuts. Made with Belgian cocoa.",
 			"price": 8.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -690,7 +690,7 @@
 			"flavor": "Caramel",
 			"description": "Decadent caramel donuts with sea salt caramel drizzle. Sweet and salty perfection.",
 			"price": 4.5,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -740,7 +740,7 @@
 			"flavor": "Caramel",
 			"description": "Decadent caramel donuts. Absolutely irresistible.",
 			"price": 8.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -789,7 +789,7 @@
 			"flavor": "Blueberry",
 			"description": "Fresh blueberry donuts with blueberry glaze. Bursting with berry flavor.",
 			"price": 5.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -838,7 +838,7 @@
 			"flavor": "Blueberry",
 			"description": "Fresh blueberry donuts. Made with real blueberries.",
 			"price": 8.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
@@ -887,7 +887,7 @@
 			"flavor": "Birthday Sprinkle",
 			"description": "Festive birthday cake donuts with rainbow sprinkles. Perfect for celebrations.",
 			"price": 5.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 6,
 			"inStock": true,
 			"images": [
@@ -936,7 +936,7 @@
 			"flavor": "Birthday Sprinkle",
 			"description": "Festive birthday cake donuts. Make every day a celebration.",
 			"price": 8.0,
-			"currency": "USD",
+			"currency": "PL",
 			"countInBox": 12,
 			"inStock": true,
 			"images": [
