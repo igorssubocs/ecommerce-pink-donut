@@ -6,8 +6,7 @@ const Footer = () => {
 		{ name: "Home", to: "/" },
 		{ name: "Catalog", to: "/catalog" },
 		{ name: "Cart", to: "/cart" },
-		{ name: "Profile", to: "/profile:id" },
-		{ name: "Not Found", to: "/notfound" },
+		{ name: "Not Found", to: "/notfound" }
 	]
 
 	const contactLinks = [

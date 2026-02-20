@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import connectDB from './src/config/db.js'
 import authRoutes from './src/routes/authRoutes.js'
+import productRoutes from './src/routes/productRoutes.js'
 
 dotenv.config()
 
@@ -17,12 +18,12 @@ app.use(cors({
 app.use(express.json())
 
 app.use('/api/auth', authRoutes)
+app.use('/api/products', productRoutes)
 
 app.get('/', (req, res) => {
 	res.json({
 		success: true,
 		message: 'Donut Shop API',
-		version: '1.0.0'
 	})
 })
 

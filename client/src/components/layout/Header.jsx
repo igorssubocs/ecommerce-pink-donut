@@ -21,7 +21,7 @@ const Header = () => {
 
 	const handleUserClick = () => {
 		if (user) {
-			navigate('/profile')
+			navigate(`/profile/${user.userName}`)
 		} else {
 			navigate('/register')
 		}
