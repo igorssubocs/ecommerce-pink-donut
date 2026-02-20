@@ -11,6 +11,9 @@ import Checkout from "../pages/Checkout"
 import Product from "../pages/Product"
 import NotFound from "../pages/NotFound"
 
+import Register from "../pages/Register"
+import Login from "../pages/Login"
+
 const AppRoutes = () => {
 	return (
 		<Routes>
@@ -23,6 +26,8 @@ const AppRoutes = () => {
 				<Route path="/terms" element={<Terms />} />
 				<Route path="/product/:path" element={<Product />} />
 				<Route path="/checkout" element={<Checkout />} />
+				<Route path="/register" element={<Register />} />
+				<Route path="/login" element={<Login />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>

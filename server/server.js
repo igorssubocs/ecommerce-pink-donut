@@ -1,32 +1,30 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
-import productRoutes from './src/routes/productRoutes.js'
 import connectDB from './src/config/db.js'
+import authRoutes from './src/routes/authRoutes.js'
 
 dotenv.config()
 
 const app = express()
+connectDB()
 
-app.use(cors())
+app.use(cors({
+	origin: 'http://localhost:5173',
+	credentials: true
+}))
+
 app.use(express.json())
 
-connectDB()
+app.use('/api/auth', authRoutes)
 
 app.get('/', (req, res) => {
 	res.json({
 		success: true,
 		message: 'Donut Shop API',
-		version: '1.0.0',
-		endpoints: {
-			products: '/api/products',
-			productById: '/api/products/:id',
-			productBySlug: '/api/products/slug/:path'
-		}
+		version: '1.0.0'
 	})
 })
-
-app.use('/api/products', productRoutes)
 
 app.use((req, res) => {
 	res.status(404).json({
@@ -36,15 +34,15 @@ app.use((req, res) => {
 })
 
 app.use((err, req, res, next) => {
-	console.error('Error:', err)
-	res.status(err.status || 500).json({
+	console.error(err.stack)
+	res.status(500).json({
 		success: false,
 		message: err.message || 'Server Error'
 	})
 })
 
 const PORT = process.env.PORT || 5000
+
 app.listen(PORT, () => {
 	console.log(`🚀 Server running on http://localhost:${PORT}`)
-	console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`)
 })

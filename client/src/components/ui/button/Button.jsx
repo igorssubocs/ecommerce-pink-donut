@@ -11,9 +11,7 @@ const Button = ({ children, to, href, className = "", ...props }) => {
 	}
 
 	return (
-		<button 
-			className={`${baseStyle} ${className}`} {...props}
-		>
+		<button className={`${baseStyle} ${className}`} {...props}>
 			{children}
 		</button>
 	)

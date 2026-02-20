@@ -1,11 +1,14 @@
 import { useState } from "react"
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom'
 import SidebarMenu from "./SidebarMenu"
 import { ShoppingCart, Menu, User } from 'lucide-react'
 import { LOGO } from '../../assets/assets'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false)
+	const navigate = useNavigate()
+	const { user } = useSelector(state => state.auth)
 
 	const menuItems = [
 		{ name: "Home", path: "/" },
@@ -15,6 +18,14 @@ const Header = () => {
 	const navLinkClass = ({ isActive }) =>
 		`px-8 py-4 rounded-full ${isActive ? "bg-gray-100" : "hover:text-pink-400"
 	}`
+
+	const handleUserClick = () => {
+		if (user) {
+			navigate('/profile')
+		} else {
+			navigate('/register')
+		}
+	}
 
 	return (
 		<header className="w-full relative flex justify-center" id="header">
@@ -40,9 +51,13 @@ const Header = () => {
 					<NavLink to="/cart" className="hover:text-pink-400" title="Cart">
 						<ShoppingCart />
 					</NavLink>
-					<NavLink to="/profile/:id" className="hover:text-pink-400" title="Profile">
+					<button 
+						onClick={handleUserClick}
+						className="hover:text-pink-400" 
+						title={user ? 'Profile' : 'Register'}
+					>
 						<User />
-					</NavLink>
+					</button>
 					<button
 						className="md:hidden text-3xl focus:outline-none hover:text-pink-400"
 						onClick={() => setIsOpen(true)}

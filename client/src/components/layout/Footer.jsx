@@ -6,7 +6,7 @@ const Footer = () => {
 		{ name: "Home", to: "/" },
 		{ name: "Catalog", to: "/catalog" },
 		{ name: "Cart", to: "/cart" },
-		{ name: "Team", to: "/team" },
+		{ name: "Profile", to: "/profile:id" },
 		{ name: "Not Found", to: "/notfound" },
 	]
 
