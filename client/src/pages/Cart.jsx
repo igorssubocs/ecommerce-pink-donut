@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useCart } from '../hooks/useCart'
@@ -5,12 +6,14 @@ import CartList from '../components/features/cart/CartList'
 import CartSummary from '../components/features/cart/CartSummary'
 import CartEmpty from '../components/features/cart/CartEmpty'
 import Button from '../components/ui/button/Button'
+import Modal from '../components/ui/modal/Modal'
 import { Trash2 } from 'lucide-react'
 
 const Cart = () => {
 	const navigate = useNavigate()
 	const { user } = useSelector(state => state.auth)
 	const { items, total, updateQuantity, removeItem, clearCart, itemCount } = useCart()
+	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	if (!user) {
 		return (
@@ -28,6 +31,7 @@ const Cart = () => {
 
 	const handleClearCart = async () => {
 		await clearCart()
+		setIsModalOpen(false)
 	}
 
 	const handleIncrease = (productId, currentQuantity) => {
@@ -53,7 +57,7 @@ const Cart = () => {
 			<div className="flex items-center justify-between">
 				<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">Shopping Cart</h2>
 				<button
-					onClick={handleClearCart}
+					onClick={() => setIsModalOpen(true)}
 					className="flex items-center gap-2 text-pink-400 hover:text-pink-500 transition-all"
 				>
 					<Trash2 className="w-5 h-5" />
@@ -75,6 +79,14 @@ const Cart = () => {
 					<CartSummary subtotal={total} itemCount={itemCount} />
 				</div>
 			</div>
+
+			<Modal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+				onConfirm={handleClearCart}
+				title="Delete Products"
+				message="Are you sure you want to delete the selected products? It will not be possible to cancel this action."
+			/>
 		</section>
 	)
 }

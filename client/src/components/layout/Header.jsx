@@ -4,9 +4,10 @@ import SidebarMenu from "./SidebarMenu"
 import { ShoppingCart, Menu, User } from 'lucide-react'
 import { LOGO } from '../../assets/assets'
 import { useSelector } from 'react-redux'
+import useToggle from '../../hooks/useToggle'
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false)
+	const { value: isOpen, setTrue: openMenu, setFalse: closeMenu } = useToggle()
 	const navigate = useNavigate()
 	const { user } = useSelector(state => state.auth)
 
@@ -60,7 +61,7 @@ const Header = () => {
 					</button>
 					<button
 						className="md:hidden text-3xl focus:outline-none hover:text-pink-400"
-						onClick={() => setIsOpen(true)}
+						onClick={openMenu}
 					>
 							<Menu />
 					</button>
@@ -68,7 +69,7 @@ const Header = () => {
 			</div>
 			<SidebarMenu
 				isOpen={isOpen}
-				setIsOpen={setIsOpen}
+				onClose={closeMenu}
 				menuItems={menuItems}
 			/>
 		</header>

@@ -1,14 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import { X } from 'lucide-react'
 
-const SidebarMenu = ({ isOpen, setIsOpen, menuItems }) => {
+const SidebarMenu = ({ isOpen, onClose, menuItems }) => {
 	return (
 		<nav
 			className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 md:hidden ${
 			isOpen ? "translate-x-0" : "translate-x-full"}`}
 		>
 			<button
-				onClick={() => setIsOpen(false)}
+				onClick={onClose}
 				className="absolute top-4 right-4 text-2xl hover:text-pink-400"
 			>
 				<X />
@@ -19,7 +19,7 @@ const SidebarMenu = ({ isOpen, setIsOpen, menuItems }) => {
 					<li key={item.name}>
 						<NavLink
 							to={item.path}
-							onClick={() => setIsOpen(false)}
+							onClick={onClose}
 							className={({ isActive }) =>
 								`flex flex-col rounded-full px-6 py-4 ${isActive ? "bg-gray-100" : "hover:text-pink-400"}`
 							}
