@@ -4,6 +4,7 @@ import cors from 'cors'
 import connectDB from './src/config/db.js'
 import authRoutes from './src/routes/authRoutes.js'
 import productRoutes from './src/routes/productRoutes.js'
+import cartRoutes from './src/routes/cartRoutes.js'
 
 dotenv.config()
 
@@ -11,7 +12,7 @@ const app = express()
 connectDB()
 
 app.use(cors({
-	origin: 'http://localhost:5173',
+	origin: process.env.CLIENT_URL || 'http://localhost:5173',
 	credentials: true
 }))
 
@@ -19,6 +20,7 @@ app.use(express.json())
 
 app.use('/api/auth', authRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/cart', cartRoutes)
 
 app.get('/', (req, res) => {
 	res.json({

@@ -8,9 +8,7 @@ export const protect = async (req, res, next) => {
 		if (req.headers.authorization?.startsWith('Bearer')) {
 			token = req.headers.authorization.split(' ')[1]
 		}
-		else if (req.cookies.token) {
-			token = req.cookies.token
-		}
+
 		if (!token) {
 			return res.status(401).json({
 				success: false,
@@ -19,7 +17,7 @@ export const protect = async (req, res, next) => {
 		}
 
 		const decoded = jwt.verify(token, process.env.JWT_SECRET)
-
+		
 		req.user = await User.findById(decoded.id).select('-password')
 
 		if (!req.user) {
@@ -31,6 +29,7 @@ export const protect = async (req, res, next) => {
 
 		next()
 	} catch (error) {
+		console.error('Auth middleware error:', error)
 		return res.status(401).json({
 			success: false,
 			message: 'Not authorized, token failed'
