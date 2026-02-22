@@ -26,7 +26,7 @@ const [openIndex, setOpenIndex] = useState(null)
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-5">
+				<div className="space-y-5">
 					{FAQ.map((item, index) => (
 						<div key={index}>
 							<button
