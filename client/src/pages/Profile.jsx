@@ -11,7 +11,7 @@ const Profile = () => {
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
 	const { user } = useSelector(state => state.auth)
-	const { orders } = useSelector(state => state.orders)
+	const { orders = [] } = useSelector(state => state.orders ?? {})
 
 	if (!user) {
 		return (
