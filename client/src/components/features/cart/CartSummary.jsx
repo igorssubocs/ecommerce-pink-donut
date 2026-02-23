@@ -38,25 +38,25 @@ const CartSummary = ({ subtotal, itemCount }) => {
 
 			<div className="space-y-1">
 				<div className="flex justify-between">
-					<h4 className='text-gray-500'>Subtotal ({itemCount} items)</h4>
-					<p className="font-semibold">${subtotal.toFixed(2)}</p>
+					<p className='text-gray-500'>Subtotal ({itemCount} items)</p>
+					<span className="font-semibold">${subtotal.toFixed(2)}</span>
 				</div>
 
 				<div className="flex justify-between">
-					<h4 className='text-gray-500'>Shipping</h4>
-					<p className="font-semibold text-green-500">FREE</p>
+					<p className='text-gray-500'>Shipping</p>
+					<span className="font-semibold text-green-500">FREE</span>
 				</div>
 
 				{discount > 0 && (
 					<div className="flex justify-between text-pink-400">
-						<h4>Discount</h4>
-						<p className="font-semibold">-${discount.toFixed(2)}</p>
+						<p>Discount</p>
+						<span className="font-semibold">-${discount.toFixed(2)}</span>
 					</div>
 				)}
 
 				<div className="flex justify-between">
-					<h4 className="font-bold">Total</h4>
-					<p className="font-semibold">${total.toFixed(2)}</p>
+					<p className="font-bold">Total</p>
+					<span className="font-semibold">${total.toFixed(2)}</span>
 				</div>
 			</div>
 
