@@ -33,13 +33,7 @@ export default function Product() {
 			return
 		}
 
-		const result = await addToCart(product._id, 1)
-
-		if (result.success) {
-			alert('Added to cart!')
-		} else {
-			alert(result.error || 'Failed to add to cart')
-		}
+		await addToCart(product._id, 1)
 	}
 
 	if (!product) return (

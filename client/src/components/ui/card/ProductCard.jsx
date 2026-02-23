@@ -6,7 +6,7 @@ import Button from '../button/Button'
 const ProductCard = ({ product }) => {
 	const navigate = useNavigate()
 	const { user } = useSelector(state => state.auth)
-	const { addToCart, loading } = useCart()
+	const { addToCart } = useCart()
 
 	const handleAddToCart = async () => {
 		if (!user) {
@@ -40,10 +40,9 @@ const ProductCard = ({ product }) => {
 				<p className="text-sm text-gray-600 flex-1 line-clamp-2">{product.description}</p>
 				<Button
 					onClick={handleAddToCart}
-					disabled={!product.inStock || loading}
 					className="w-full bg-pink-400 text-white hover:bg-pink-500 rounded-2xl"
 				>
-					{loading ? 'Adding...' : product.inStock ? 'Add to Cart' : 'Out of Stock'}
+					Add to Cart
 				</Button>
 			</div>
 		</div>

@@ -48,7 +48,7 @@ const CartSummary = ({ subtotal, itemCount }) => {
 				</div>
 
 				{discount > 0 && (
-					<div className="flex justify-between text-green-400">
+					<div className="flex justify-between text-pink-400">
 						<h4>Discount</h4>
 						<p className="font-semibold">-${discount.toFixed(2)}</p>
 					</div>
