@@ -12,7 +12,7 @@ const Footer = () => {
 	const contactLinks = [
 		{ name: "Telegram", href: "https://telegram.com/u_r_o_p_b" },
 		{ name: "Instagram", href: "https://instagram.com/isubocs" },
-		{ name: "X", href: "https://x.com/igorssubocs" },
+		{ name: "X", href: "https://x.com/igorssubocs" }
 	]
 
 	const supportLinks = [
@@ -21,7 +21,7 @@ const Footer = () => {
 
 	const legalLinks = [
 		{ name: "Privacy Policy", to: "/privacy" },
-		{ name: "Terms & Conditions", to: "/terms" },
+		{ name: "Terms & Conditions", to: "/terms" }
 	]
 
 	return (

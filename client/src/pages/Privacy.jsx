@@ -7,7 +7,7 @@ const Privacy = () => {
 				Privacy Policy
 			</h1>
 
-			`<div className="bg-white rounded-3xl p-7 space-y-5">
+			<div className="bg-white rounded-3xl p-7 space-y-5">
 				{privacySections.map((section) => (
 					<article key={section.id} id={section.id}>
 						<h3 className="font-bold text-2xl mb-3">{section.title}</h3>
@@ -30,7 +30,7 @@ const Privacy = () => {
 						)}
 
 						{section.contact && (
-							<div className="bg-gray-50 rounded-xl p-4 mt-3">
+							<div className="bg-gray-50 rounded-2xl p-4 mt-3">
 								<strong>Email:</strong> info@donut-shop.com
 							</div>
 						)}
