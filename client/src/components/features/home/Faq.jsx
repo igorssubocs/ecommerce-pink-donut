@@ -26,7 +26,7 @@ const [openIndex, setOpenIndex] = useState(null)
 					</p>
 				</div>
 
-				<div className="space-y-5">
+				<div className="space-y-3">
 					{FAQ.map((item, index) => (
 						<div key={index}>
 							<button
