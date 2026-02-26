@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
 					<Link to={`/product/${product.path}`}>
 						<h3>{product.name}</h3>
 					</Link>
-					<p>$ {product.price.toFixed(2)}</p>
+					<p>{product.price.toFixed(2)}</p>
 				</div>
 			</div>
 
