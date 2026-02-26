@@ -2,7 +2,7 @@ import CartItem from './CartItem'
 
 const CartList = ({ items, onIncrease, onDecrease, onRemove }) => {
 	return (
-		<div className="space-y-5">
+		<div className="space-y-3">
 			{items.map(item => (
 				<CartItem
 					key={item.product._id}
