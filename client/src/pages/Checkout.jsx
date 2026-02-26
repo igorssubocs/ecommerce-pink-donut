@@ -1,7 +1,7 @@
-const CheckOut = () => {
+const Checkout = () => {
 	return (
-		<div>CheckOut</div>
+		<div>Checkout</div>
 	)
 }
 
-export default CheckOut
+export default Checkout

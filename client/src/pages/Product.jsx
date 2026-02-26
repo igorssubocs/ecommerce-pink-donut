@@ -53,7 +53,7 @@ export default function Product() {
 			<div className="grid lg:grid-cols-2 gap-10">
 				<ProductImages images={product.images} name={product.name} />
 
-				<div className="space-y-10">
+				<div className="space-y-10 mb-20">
 					<div className="space-y-3">
 						<h1 className="font-bold text-4xl sm:text-5xl md:text-6xl">{product.flavor}</h1>
 						<p className="text-gray-600">{product.description}</p>
@@ -66,19 +66,20 @@ export default function Product() {
 					<Button
 						onClick={handleAddToCart}
 						disabled={!product.inStock}
-						className="w-full bg-pink-400 text-white rounded-full hover:bg-pink-500"
+						className="w-full bg-pink-400 text-white rounded-2xl hover:bg-pink-500"
 					>
 						{product.inStock ? 'Add to Cart' : 'Out of Stock'}
 					</Button>
 
 					<Advantages />
+
+					<ProductTabs product={product} />
 				</div>
 			</div>
-			<ProductTabs product={product} />
 
 			{relatedProducts.length > 0 && (
 				<div>
-					<h2 className="font-bold text-3xl sm:text-4xl mb-8">You may also like</h2>
+					<h2 className="font-bold text-3xl sm:text-4xl mb-10">You may also like</h2>
 					<div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
 						{relatedProducts.map(prod => (
 							<ProductCard key={prod._id} product={prod} />
