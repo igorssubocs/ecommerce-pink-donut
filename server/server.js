@@ -1,12 +1,12 @@
+import 'dotenv/config'
 import express from 'express'
-import dotenv from 'dotenv'
 import cors from 'cors'
 import connectDB from './src/config/db.js'
 import authRoutes from './src/routes/authRoutes.js'
 import productRoutes from './src/routes/productRoutes.js'
 import cartRoutes from './src/routes/cartRoutes.js'
-
-dotenv.config()
+import orderRoutes from './src/routes/orderRoutes.js'
+import paymentRoutes from './src/routes/paymentRoutes.js'
 
 const app = express()
 connectDB()
@@ -16,11 +16,15 @@ app.use(cors({
 	credentials: true
 }))
 
+app.use('/api/payment/webhook', express.raw({ type: 'application/json' }))
+
 app.use(express.json())
 
 app.use('/api/auth', authRoutes)
 app.use('/api/products', productRoutes)
 app.use('/api/cart', cartRoutes)
+app.use('/api/orders', orderRoutes)
+app.use('/api/payment', paymentRoutes)
 
 app.get('/', (req, res) => {
 	res.json({
