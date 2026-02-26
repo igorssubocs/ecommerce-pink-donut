@@ -17,11 +17,11 @@ const Cart = () => {
 
 	if (!user) {
 		return (
-			<div className="flex flex-col items-center justify-center min-h-screen gap-5">
+			<div className="h-full flex flex-col space-y-5 items-center justify-center">
 				<h2 className="text-3xl font-bold">Please login to view cart</h2>
 				<Button 
 					to="/login" 
-					className="bg-pink-400 text-white rounded-full hover:bg-pink-500 px-8 py-3"
+					className="bg-pink-400 text-white rounded-full hover:bg-pink-500"
 				>
 					Login
 				</Button>

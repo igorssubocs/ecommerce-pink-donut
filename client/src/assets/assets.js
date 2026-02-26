@@ -2,7 +2,7 @@ import customer1 from "./customers/customer1.webp"
 import customer2 from "./customers/customer2.webp"
 import customer3 from "./customers/customer3.webp"
 
-import logo from './logo.png'
+import logo from './logo.webp'
 
 import ad from './ad.mp4'
 
