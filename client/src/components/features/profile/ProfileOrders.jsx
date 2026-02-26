@@ -1,7 +1,24 @@
+import { useEffect, useState } from 'react'
 import { Package } from 'lucide-react'
+import { orderService } from '../../../services/orderService'
 import Button from '../../ui/button/Button'
 
-const ProfileOrders = ({ orders = [] }) => {
+const ProfileOrders = () => {
+	const [orders, setOrders] = useState([])
+
+	useEffect(() => {
+		const fetchOrders = async () => {
+			try {
+				const response = await orderService.getUserOrders()
+				setOrders(response.data)
+			} catch (error) {
+				console.error('Failed to fetch orders:', error)
+			}
+		}
+
+		fetchOrders()
+	}, [])
+
 	return (
 		<div className="bg-white rounded-3xl p-7">
 			<h2 className="font-bold text-2xl mb-4">Order History</h2>
@@ -12,7 +29,9 @@ const ProfileOrders = ({ orders = [] }) => {
 						<div key={order.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl">
 							<div>
 								<p className="font-semibold">{order.orderNumber}</p>
-								<p className="text-sm text-gray-500">{order.date}</p>
+								<p className="text-sm text-gray-500">
+									{new Date(order.createdAt).toLocaleDateString()}
+								</p>
 							</div>
 							<div className="text-right">
 								<p className="font-semibold">${order.total.toFixed(2)}</p>
