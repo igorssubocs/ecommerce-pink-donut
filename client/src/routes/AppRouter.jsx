@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom"
 import Layout from "../components/layout/Layout"
-
 import Home from "../pages/Home"
 import Catalog from "../pages/Catalog"
 import Cart from "../pages/Cart"
@@ -9,8 +8,8 @@ import Terms from "../pages/Terms"
 import Profile from "../pages/Profile"
 import Checkout from "../pages/Checkout"
 import Product from "../pages/Product"
+import OrderSuccess from "../pages/OrderSuccess"
 import NotFound from "../pages/NotFound"
-
 import Register from "../pages/Register"
 import Login from "../pages/Login"
 
@@ -26,6 +25,7 @@ const AppRoutes = () => {
 				<Route path="/terms" element={<Terms />} />
 				<Route path="/product/:path" element={<Product />} />
 				<Route path="/checkout" element={<Checkout />} />
+				<Route path="/order-success" element={<OrderSuccess />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="*" element={<NotFound />} />

@@ -15,7 +15,7 @@ const CartSummary = ({ subtotal, itemCount }) => {
 
 	return (
 		<div className="bg-white rounded-3xl p-7 space-y-5">
-			<h2 className="font-bold text-xl mb-4">Order Summary</h2>
+			<h3 className="font-bold text-xl mb-4">Order Summary</h3>
 
 			<div className='space-y-1'>
 				<label className="text-sm">Promo Code</label>
@@ -54,9 +54,9 @@ const CartSummary = ({ subtotal, itemCount }) => {
 					</div>
 				)}
 
-				<div className="flex justify-between">
-					<p className="font-bold">Total</p>
-					<span className="font-semibold">${total.toFixed(2)}</span>
+				<div className="flex justify-between font-semibold">
+					<p>Total</p>
+					<span>${total.toFixed(2)}</span>
 				</div>
 			</div>
 
