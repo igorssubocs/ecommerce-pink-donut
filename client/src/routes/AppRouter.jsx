@@ -12,6 +12,7 @@ import OrderSuccess from "../pages/OrderSuccess"
 import NotFound from "../pages/NotFound"
 import Register from "../pages/Register"
 import Login from "../pages/Login"
+import Settings from "../pages/Settings"
 
 const AppRoutes = () => {
 	return (
@@ -28,6 +29,7 @@ const AppRoutes = () => {
 				<Route path="/order-success" element={<OrderSuccess />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/login" element={<Login />} />
+				<Route path="/settings" element={<Settings />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>
