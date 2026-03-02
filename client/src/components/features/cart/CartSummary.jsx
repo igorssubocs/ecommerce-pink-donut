@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { formatPrice } from '../../../utils/formatPrice'
 import Button from '../../ui/button/Button'
 
 const CartSummary = ({ subtotal, itemCount }) => {
@@ -39,7 +40,7 @@ const CartSummary = ({ subtotal, itemCount }) => {
 			<div className="space-y-1">
 				<div className="flex justify-between">
 					<p className='text-gray-500'>Subtotal ({itemCount} items)</p>
-					<span className="font-semibold">${subtotal.toFixed(2)}</span>
+					<span className="font-semibold">{formatPrice(subtotal)}</span>
 				</div>
 
 				<div className="flex justify-between">
@@ -50,13 +51,13 @@ const CartSummary = ({ subtotal, itemCount }) => {
 				{discount > 0 && (
 					<div className="flex justify-between text-pink-400">
 						<p>Discount</p>
-						<span className="font-semibold">-${discount.toFixed(2)}</span>
+						<span className="font-semibold">-{formatPrice(discount)}</span>
 					</div>
 				)}
 
 				<div className="flex justify-between font-semibold">
 					<p>Total</p>
-					<span>${total.toFixed(2)}</span>
+					<span>{formatPrice(total)}</span>
 				</div>
 			</div>
 

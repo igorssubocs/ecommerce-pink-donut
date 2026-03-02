@@ -1,20 +1,10 @@
-import { useState, useEffect } from "react"
-import ProductCard from "../../ui/card/ProductCard"
-import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+import { useProducts } from '../../../hooks/useProducts'
+import ProductCard from '../../ui/card/ProductCard'
 
 export default function Products() {
-	const [products, setProducts] = useState([])
-
-	useEffect(() => {
-		axios.get(`${API_URL}/products?sort=-id&limit=4`)
-			.then(res => setProducts(res.data.data.slice(0, 4)))
-			.catch(err => console.error('Error:', err))
-			.finally(() => setLoading(false))
-	}, [])
+	const { products } = useProducts(4)
 
 	return (
 		<section>

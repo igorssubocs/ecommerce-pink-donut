@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useCart } from '../../../hooks/useCart'
+import { formatPrice } from '../../../utils/formatPrice'
 import Button from '../button/Button'
 
 const ProductCard = ({ product }) => {
@@ -32,7 +33,7 @@ const ProductCard = ({ product }) => {
 					<Link to={`/product/${product.path}`}>
 						<h3>{product.name}</h3>
 					</Link>
-					<p>{product.price.toFixed(2)}</p>
+					<p>{formatPrice(product.price)}</p>
 				</div>
 			</div>
 

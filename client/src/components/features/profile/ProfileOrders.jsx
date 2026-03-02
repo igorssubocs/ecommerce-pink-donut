@@ -1,29 +1,24 @@
-import { useEffect, useState } from 'react'
-import { Package } from 'lucide-react'
-import { orderService } from '../../../services/orderService'
+import { Package, Loader2 } from 'lucide-react'
+import { useOrders } from '../../../hooks/useOrders'
+import { formatPrice } from '../../../utils/formatPrice'
 import Button from '../../ui/button/Button'
 
 const ProfileOrders = () => {
-	const [orders, setOrders] = useState([])
-
-	useEffect(() => {
-		const fetchOrders = async () => {
-			try {
-				const response = await orderService.getUserOrders()
-				setOrders(response.data)
-			} catch (error) {
-				console.error('Failed to fetch orders:', error)
-			}
-		}
-
-		fetchOrders()
-	}, [])
+	const { orders, loading, error } = useOrders()
 
 	return (
 		<div className="bg-white rounded-3xl p-7">
 			<h2 className="font-bold text-2xl mb-4">Order History</h2>
 
-			{orders.length > 0 ? (
+			{loading ? (
+				<div className="flex items-center justify-center py-10">
+					<Loader2 className="w-8 h-8 text-pink-400 animate-spin" />
+				</div>
+			) : error ? (
+				<div className="text-center py-7">
+					<p className="text-pink-400">{error}</p>
+				</div>
+			) : orders.length > 0 ? (
 				<div className="space-y-3">
 					{orders.map((order) => (
 						<div key={order.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl">
@@ -34,7 +29,7 @@ const ProfileOrders = () => {
 								</p>
 							</div>
 							<div className="text-right">
-								<p className="font-semibold">${order.total.toFixed(2)}</p>
+								<p className="font-semibold">{formatPrice(order.total)}</p>
 								<p className="text-sm text-pink-400">{order.status}</p>
 							</div>
 						</div>

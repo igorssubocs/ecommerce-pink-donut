@@ -11,7 +11,6 @@ const Profile = () => {
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
 	const { user } = useSelector(state => state.auth)
-	const { orders = [] } = useSelector(state => state.orders ?? {})
 
 	if (!user) {
 		return (
@@ -40,7 +39,7 @@ const Profile = () => {
 			<div className="grid md:grid-cols-3 gap-5">
 				<div className="md:col-span-2 space-y-5">
 					<ProfileInfo user={user} />
-					<ProfileOrders orders={orders} />
+					<ProfileOrders />
 				</div>
 				<div className="space-y-5">
 					<ProfileActions onLogout={handleLogout} />

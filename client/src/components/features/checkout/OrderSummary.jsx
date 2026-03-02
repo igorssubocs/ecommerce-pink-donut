@@ -1,3 +1,5 @@
+import { formatPrice } from '../../../utils/formatPrice'
+
 const OrderSummary = ({ items, total, itemCount }) => {
 	return (
 		<div className="bg-white rounded-3xl p-7">
@@ -9,7 +11,7 @@ const OrderSummary = ({ items, total, itemCount }) => {
 							{item.product.name} × {item.quantity}
 						</span>
 						<span className="font-semibold">
-							${(item.price * item.quantity).toFixed(2)}
+							{formatPrice(item.price * item.quantity)}
 						</span>
 					</div>
 				))}
@@ -20,7 +22,7 @@ const OrderSummary = ({ items, total, itemCount }) => {
 					Total ({itemCount} items)
 				</span>
 				<span className="font-bold text-xl text-pink-400">
-					${total.toFixed(2)}
+					{formatPrice(total)}
 				</span>
 			</div>
 		</div>

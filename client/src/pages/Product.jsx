@@ -1,31 +1,25 @@
-import { useState, useEffect } from "react"
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ChevronLeft } from 'lucide-react'
-import axios from 'axios'
 import { useProduct } from '../hooks/useProduct'
+import { useProducts } from '../hooks/useProducts'
 import { useCart } from '../hooks/useCart'
 import { useSelector } from 'react-redux'
+import { formatPrice } from '../utils/formatPrice'
 import ProductImages from '../components/features/product/ProductImages'
 import ProductTabs from '../components/features/product/ProductTabs'
 import Advantages from '../components/features/product/Advantages'
 import ProductCard from '../components/ui/card/ProductCard'
 import Button from '../components/ui/button/Button'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+import Loading from '../components/ui/loading/Loading'
+import Error from '../components/ui/error/Error'
 
 export default function Product() {
 	const navigate = useNavigate()
 	const { path } = useParams()
-	const { product } = useProduct(path)
+	const { product, loading, error } = useProduct(path)
 	const { user } = useSelector(state => state.auth)
 	const { addToCart } = useCart()
-	const [relatedProducts, setRelatedProducts] = useState([])
-
-	useEffect(() => {
-		axios.get(`${API_URL}/products?limit=4`)
-			.then(res => setRelatedProducts(res.data.data.slice(0, 4)))
-			.catch(err => console.error('Error:', err))
-	}, [])
+	const { products: relatedProducts } = useProducts(4)
 
 	const handleAddToCart = async () => {
 		if (!user) {
@@ -36,13 +30,17 @@ export default function Product() {
 		await addToCart(product._id, 1)
 	}
 
-	if (!product) return (
-		<div className="flex flex-col items-center justify-center h-full">
-			<Button to="/catalog" className="bg-pink-400 text-white rounded-full hover:bg-pink-500">
-				Back to Catalog
-			</Button>
-		</div>
-	)
+	if (loading) {
+		return <Loading title="Loading product" subtitle="Please wait..." />
+	}
+
+	if (error) {
+		return <Error title="Error" subtitle={error} />
+	}
+
+	if (!product) {
+		return <Error title="Product not found" subtitle="The product you're looking for doesn't exist" />
+	}
 
 	return (
 		<section className="space-y-5">
@@ -59,7 +57,7 @@ export default function Product() {
 						<p className="text-gray-600">{product.description}</p>
 						<div className="flex justify-between items-start font-semibold text-xl">
 							<p>Box of {product.countInBox}</p>
-							<p>${product.price.toFixed(2)}</p>
+							<p>{formatPrice(product.price)}</p>
 						</div>
 					</div>
 

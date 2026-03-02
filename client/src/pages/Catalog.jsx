@@ -9,9 +9,11 @@ import ProductGrid from "../components/features/catalog/ProductGrid"
 import EmptyState from "../components/features/catalog/EmptyState"
 import Filters from "../components/features/filters/Filters"
 import Button from "../components/ui/button/Button"
+import Loading from "../components/ui/loading/Loading"
+import Error from "../components/ui/error/Error"
 
 const Catalog = () => {
-	const { products, loading } = useProducts()
+	const { products, loading, error } = useProducts()
 	const [visible, setVisible] = useState(9)
 
 	const { register, watch, setValue, reset } = useForm({
@@ -42,6 +44,14 @@ const Catalog = () => {
 	const handleReset = () => {
 		reset()
 		setVisible(window.innerWidth < 1280 ? 6 : 9)
+	}
+
+	if (loading) {
+		return <Loading title="Loading products" subtitle="Please wait..." />
+	}
+
+	if (error) {
+		return <Error title="Error" subtitle={error} />
 	}
 
 	const filtered = filterProducts(products, filters)

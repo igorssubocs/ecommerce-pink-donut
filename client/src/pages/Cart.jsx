@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useCart } from '../hooks/useCart'
 import CartList from '../components/features/cart/CartList'
@@ -7,12 +6,13 @@ import CartSummary from '../components/features/cart/CartSummary'
 import CartEmpty from '../components/features/cart/CartEmpty'
 import Button from '../components/ui/button/Button'
 import Modal from '../components/ui/modal/Modal'
+import Loading from '../components/ui/loading/Loading'
+import Error from '../components/ui/error/Error'
 import { Trash2 } from 'lucide-react'
 
 const Cart = () => {
-	const navigate = useNavigate()
 	const { user } = useSelector(state => state.auth)
-	const { items, total, updateQuantity, removeItem, clearCart, itemCount } = useCart()
+	const { items, total, loading, error, updateQuantity, removeItem, clearCart, itemCount } = useCart()
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	if (!user) {
@@ -27,6 +27,14 @@ const Cart = () => {
 				</Button>
 			</div>
 		)
+	}
+
+	if (loading) {
+		return <Loading title="Loading cart" subtitle="Please wait..." />
+	}
+
+	if (error) {
+		return <Error title="Error" subtitle={error} />
 	}
 
 	const handleClearCart = async () => {

@@ -1,20 +1,29 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+import { productService } from '../services/productService'
 
 export const useProduct = (path) => {
 	const [product, setProduct] = useState(null)
 	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
 
 	useEffect(() => {
 		if (!path) return
 
-		axios.get(`${API_URL}/products/slug/${path}`)
-			.then(res => setProduct(res.data.data))
-			.catch(err => console.error('Error:', err))
-			.finally(() => setLoading(false))
+		const fetchProduct = async () => {
+			try {
+				setError(null)
+				const response = await productService.getProductByPath(path)
+				setProduct(response.data)
+			} catch (err) {
+				console.error('Failed to fetch product:', err)
+				setError('Failed to load product')
+			} finally {
+				setLoading(false)
+			}
+		}
+
+		fetchProduct()
 	}, [path])
 
-	return { product, loading }
+	return { product, loading, error }
 }

@@ -1,5 +1,6 @@
 import { Minus, Plus, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { formatPrice } from '../../../utils/formatPrice'
 
 const CartItem = ({ item, onIncrease, onDecrease, onRemove }) => {
 	return (
@@ -19,7 +20,7 @@ const CartItem = ({ item, onIncrease, onDecrease, onRemove }) => {
 					>
 						{item.product.flavor}
 					</Link>
-					<p className="text-gray-500">${item.price.toFixed(2)}</p>
+					<p className="text-gray-500">{formatPrice(item.price)}</p>
 				</div>
 			</div>
 

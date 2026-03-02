@@ -1,19 +1,26 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { productService } from '../services/productService'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const DEFAULT_FLAVORS = [
+	"Strawberry", "Vanilla", "Chocolate", "Caramel", 
+	"Blueberry", "Lemon Zest", "Peanut Butter", 
+	"Cookies and Cream", "Coconut Dream", "Birthday Sprinkle"
+]
 
 export const useFlavors = () => {
 	const [flavors, setFlavors] = useState([])
 
 	useEffect(() => {
-		axios.get(`${API_URL}/products/flavors`)
-			.then(res => setFlavors(res.data.data))
-			.catch(() => setFlavors([
-				"Strawberry", "Vanilla", "Chocolate", "Caramel", 
-				"Blueberry", "Lemon Zest", "Peanut Butter", 
-				"Cookies and Cream", "Coconut Dream", "Birthday Sprinkle"
-			]))
+		const fetchFlavors = async () => {
+			try {
+				const response = await productService.getFlavors()
+				setFlavors(response.data)
+			} catch (error) {
+				setFlavors(DEFAULT_FLAVORS)
+			}
+		}
+
+		fetchFlavors()
 	}, [])
 
 	return flavors
