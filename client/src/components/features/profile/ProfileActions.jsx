@@ -7,12 +7,6 @@ const ProfileActions = ({ onLogout }) => {
 			<h2 className="font-bold text-xl mb-4">Quick Actions</h2>
 			<div className="space-y-2">
 				<Button
-					to="/settings"
-					className="w-full bg-gray-100 rounded-2xl hover:bg-gray-200"
-				>
-					Settings
-				</Button>
-				<Button
 					to="/cart"
 					className="w-full bg-gray-100 rounded-2xl hover:bg-gray-200"
 				>

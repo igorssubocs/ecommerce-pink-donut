@@ -20,6 +20,4 @@ const Input = React.forwardRef(({ label, name, type = "text", ...props }, ref) =
 	)
 })
 
-Input.displayName = 'Input'
-
 export default Input
