@@ -7,7 +7,7 @@ export default function Products() {
 	const { products } = useProducts(4)
 
 	return (
-		<section>
+		<section className='mx-auto' id="products">
 			<div className="flex justify-between items-center">
 				<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-10">
 					Our Products

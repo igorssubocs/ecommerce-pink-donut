@@ -16,7 +16,7 @@ const CartSummary = ({ subtotal, itemCount }) => {
 
 	return (
 		<div className="bg-white rounded-3xl p-7 space-y-5">
-			<h3 className="font-bold text-xl mb-4">Order Summary</h3>
+			<h3 className="font-bold text-xl mb-5">Order Summary</h3>
 
 			<div className='space-y-1'>
 				<label className="text-sm">Promo Code</label>
