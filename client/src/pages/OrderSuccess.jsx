@@ -32,7 +32,7 @@ const OrderSuccess = () => {
 	}
 
 	return (
-		<section className="max-w-2xl mx-auto space-y-5">
+		<section className="max-w-2xl mx-auto space-y-5" id="ordersuccess">
 			<div className="text-center">
 				<CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-5" />
 				<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl">

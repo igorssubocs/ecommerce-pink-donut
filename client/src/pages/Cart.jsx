@@ -61,7 +61,7 @@ const Cart = () => {
 	}
 
 	return (
-		<section className="space-y-5">
+		<section className="space-y-5" id="cart">
 			<div className="flex items-center justify-between">
 				<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">Shopping Cart</h2>
 				<button

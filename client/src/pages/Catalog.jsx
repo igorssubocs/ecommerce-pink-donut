@@ -59,7 +59,7 @@ const Catalog = () => {
 	const displayed = sorted.slice(0, visible)
 
 	return (
-		<section className="grid space-y-5">
+		<section className="grid space-y-5" id="catalog">
 			<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">
 				Product Catalog
 			</h2>

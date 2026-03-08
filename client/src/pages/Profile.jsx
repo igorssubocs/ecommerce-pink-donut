@@ -32,7 +32,7 @@ const Profile = () => {
 	}
 
 	return (
-		<section className="space-y-5">
+		<section className="space-y-5" id="profile">
 			<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">
 				Account Details
 			</h2>

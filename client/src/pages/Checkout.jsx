@@ -50,7 +50,7 @@ const Checkout = () => {
 	}
 
 	return (
-		<section className="max-w-5xl mx-auto">
+		<section className="max-w-5xl mx-auto" id="checkout">
 			<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">
 				Checkout
 			</h2>

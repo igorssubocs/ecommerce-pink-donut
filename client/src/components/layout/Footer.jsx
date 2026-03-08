@@ -26,7 +26,7 @@ const Footer = () => {
 	]
 
 	return (
-		<footer className="w-full flex justify-center">
+		<footer className="w-full flex justify-center" id="footer">
 			<div className="container py-5 px-4 sm:px-4 md:px-8 lg:px-10 xl:px-12 grid space-y-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
 					<NavLink to="/" className="text-2xl font-bold text-pink-400" title="Logo">

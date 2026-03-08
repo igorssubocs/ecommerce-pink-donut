@@ -2,7 +2,7 @@ import { termsSections } from "../constants/termsContent"
 
 const Terms = () => {
 	return (
-		<section className="max-w-5xl mx-auto">
+		<section className="max-w-5xl mx-auto" id="terms">
 			<h1 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">
 				Terms of Service
 			</h1>

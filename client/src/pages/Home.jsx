@@ -9,15 +9,13 @@ const Home = () => {
 	return (
 		<section className="space-y-20">
 			<Hero />
-			<section className="w-full rounded-full" id="ad">
+			<div className="w-full rounded-full" id="ad">
 				<video src={AD} autoPlay loop muted playsInline className="w-full h-auto object-cover rounded-3xl"/>
-			</section>
+			</div>
 			<About />
 			<Products />
 			<Delivery />
-			<div className="" id="#faq">
-				<Faq />
-			</div>
+			<Faq />
 		</section>
 	)
 }

@@ -2,7 +2,7 @@ import { privacySections } from "../constants/privacyContant"
 
 const Privacy = () => {
   	return (
-		<section className="max-w-5xl mx-auto">
+		<section className="max-w-5xl mx-auto" id="privacy">
 			<h1 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-5">
 				Privacy Policy
 			</h1>

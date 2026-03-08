@@ -43,7 +43,7 @@ export default function Product() {
 	}
 
 	return (
-		<section className="space-y-5">
+		<section className="space-y-5" id="product">
 			<Link to="/catalog" className="inline-flex items-center gap-2 text-gray-500 hover:text-pink-400">
 				<ChevronLeft className="w-5 h-5" /> Back to Catalog
 			</Link>

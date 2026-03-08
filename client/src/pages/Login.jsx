@@ -28,7 +28,7 @@ const Login = () => {
 	}
 
 	return (
-		<section className="max-w-md mx-auto">
+		<section className="max-w-md mx-auto" id="login">
 			<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl text-center mb-8">
 				Login
 			</h2>

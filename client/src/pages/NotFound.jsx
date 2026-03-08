@@ -3,7 +3,7 @@ import Button from '../components/ui/button/Button'
 
 const NotFound = () => {
 	return (
-		<div className="h-full flex items-center justify-center">
+		<div className="h-full flex items-center justify-center" id="notfound">
 			<div className="text-center space-y-5">
 				<div className="space-y-3">
 					<h1 className="text-9xl font-bold text-pink-400">404</h1>
