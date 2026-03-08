@@ -47,7 +47,7 @@ const OrderSuccess = () => {
 					<span className="font-semibold">{order.orderNumber}</span>
 					<span className="font-semibold text-green-500 uppercase">{order.paymentStatus}</span>
 				</div>
-				<div className="space-y-1 my-5 botder border-t border-b py-4">
+				<div className="space-y-1 my-5 border-t border-b py-5">
 					{order.items.map((item, index) => (
 						<div key={index} className="flex justify-between">
 							<p className="text-gray-500">{item.name}</p>
@@ -64,7 +64,6 @@ const OrderSuccess = () => {
 			{order.shippingAddress && (
 				<div className="bg-white rounded-3xl p-7 flex flex-col">
 					<h3 className="text-xl font-semibold mb-5">Shipping Address</h3>
-
 					<span>{order.shippingAddress.firstName} {order.shippingAddress.lastName}</span>
 					<span>{order.shippingAddress.street}</span>
 					<span>{order.shippingAddress.city}, {order.shippingAddress.state} {order.shippingAddress.zip}</span>
@@ -74,7 +73,7 @@ const OrderSuccess = () => {
 
 			<div className="flex justify-center space-x-5">
 				<Button
-					to={`/profile/${user?._id}`}
+					to={`/profile/${user?.userName}`}
 					className="bg-pink-400 text-white rounded-full hover:bg-pink-500"
 				>
 					View Order History

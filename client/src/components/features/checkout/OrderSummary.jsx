@@ -4,7 +4,7 @@ const OrderSummary = ({ items, total, itemCount }) => {
 	return (
 		<div className="bg-white rounded-3xl p-7">
 			<h3 className="text-xl font-semibold mb-5">Order Summary</h3>
-			<div className="space-y-">
+			<div className="space-y-3">
 				{items.map(item => (
 					<div key={item.product._id} className="flex justify-between">
 						<span className="text-gray-500">
