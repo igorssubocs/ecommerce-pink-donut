@@ -1,0 +1,9 @@
+{
+	"rewrites": [
+		{ "source": "/order-success", "destination": "/" },
+		{ "source": "/checkout", "destination": "/" },
+		{ "source": "/catalog", "destination": "/" },
+		{ "source": "/product/:path*", "destination": "/" },
+		{ "source": "/profile/:path*", "destination": "/" }
+	]
+}
