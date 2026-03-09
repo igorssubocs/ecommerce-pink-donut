@@ -1,7 +1,8 @@
-import { Package, Loader2 } from 'lucide-react'
+import { Package } from 'lucide-react'
 import { useOrders } from '../../../hooks/useOrders'
 import { formatPrice } from '../../../utils/formatPrice'
 import Button from '../../ui/button/Button'
+import Loading from '../../ui/loading/Loading'
 
 const ProfileOrders = () => {
 	const { orders, loading, error } = useOrders()
@@ -11,9 +12,10 @@ const ProfileOrders = () => {
 			<h2 className="font-bold text-2xl mb-4">Order History</h2>
 
 			{loading ? (
-				<div className="flex items-center justify-center py-10">
-					<Loader2 className="w-8 h-8 text-pink-400 animate-spin" />
-				</div>
+				<Loading
+					title="Loading orders"
+					subtitle="Please wait 30-50 seconds... The server may be waking up."
+				/>
 			) : error ? (
 				<div className="text-center py-7">
 					<p className="text-pink-400">{error}</p>

@@ -31,7 +31,12 @@ export default function Product() {
 	}
 
 	if (loading) {
-		return <Loading title="Loading product" subtitle="Please wait..." />
+		return (
+			<Loading
+				title="Loading product"
+				subtitle="Please wait 30-50 seconds... The server may be waking up."
+			/>
+		)
 	}
 
 	if (error) {

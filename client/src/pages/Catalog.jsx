@@ -47,7 +47,7 @@ const Catalog = () => {
 	}
 
 	if (loading) {
-		return <Loading title="Loading products" subtitle="Please wait..." />
+		return <Loading title="Loading products" subtitle="Please wait 30-50 seconds..." />
 	}
 
 	if (error) {

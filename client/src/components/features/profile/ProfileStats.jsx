@@ -1,6 +1,6 @@
-import { Loader2 } from 'lucide-react'
 import { useOrders } from '../../../hooks/useOrders'
 import { formatPrice } from '../../../utils/formatPrice'
+import Loading from '../../ui/loading/Loading'
 
 const ProfileStats = () => {
 	const { stats, loading } = useOrders()
@@ -10,9 +10,10 @@ const ProfileStats = () => {
 			<h2 className="font-bold text-xl mb-4">Account Stats</h2>
 
 			{loading ? (
-				<div className="flex items-center justify-center py-5">
-					<Loader2 className="w-6 h-6 text-pink-400 animate-spin" />
-				</div>
+				<Loading
+					title="Loading account stats"
+					subtitle="Please wait 30-50 seconds... The server may be waking up."
+				/>
 			) : (
 				<div className="space-y-3">
 					<div className="flex justify-between items-center">

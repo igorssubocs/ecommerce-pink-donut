@@ -17,7 +17,7 @@ const OrderSuccess = () => {
 		return (
 			<Loading 
 				title="Processing Your Order" 
-				subtitle="Please wait while we confirm your payment..."
+				subtitle="Please wait 30-50 seconds while we confirm your payment. The server may be waking up."
 			/>
 		)
 	}
