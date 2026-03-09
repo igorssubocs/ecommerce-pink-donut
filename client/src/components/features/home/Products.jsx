@@ -2,9 +2,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
 import { useProducts } from '../../../hooks/useProducts'
 import ProductCard from '../../ui/card/ProductCard'
+import Loading from '../../ui/loading/Loading'
 
 export default function Products() {
-	const { products } = useProducts(4)
+	const { products, loading } = useProducts(4)
+
+	if (loading) {
+		return <Loading title="Loading cart" subtitle="Please wait 30-50 seconds..." />
+	}
 
 	return (
 		<section className='mx-auto' id="products">
@@ -17,7 +22,7 @@ export default function Products() {
 				</Link>
 			</div>
 			<div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-				{products.map((product) => (
+				{products?.map((product) => (
 					<ProductCard key={product.id} product={product} />
 				))}
 			</div>
