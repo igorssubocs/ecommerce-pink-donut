@@ -1,9 +1,17 @@
 import React from 'react'
+import { motion } from "framer-motion"
+import { fadeInUp } from '../../../utils/animations'
 import { ABOUT_IMAGES } from '../../../assets/assets'
 
 const About = () => {
 	return (
-		<section className="mx-auto" id="about">
+		<motion.section
+			className="mx-auto"
+			id="about"
+			variants={fadeInUp}
+			initial="initial"
+			animate="animate"
+		>
 			<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-10">
 				Resource is <span className="text-pink-400 italic">the perfect and cozy place</span> where you can enjoy a variety of hot beverages,
 				relax, catch up with friends, or get some work done.
@@ -34,7 +42,7 @@ const About = () => {
 				</div>
 
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 

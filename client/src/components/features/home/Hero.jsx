@@ -1,9 +1,17 @@
+import { motion } from "framer-motion"
+import { fadeInUp } from "../../../utils/animations"
 import Customers from "./Customers"
 import Button from '../../ui/button/Button'
 
 const Hero = () => {
 	return (
-		<section className="grid justify-center items-center gap-10 text-center" id="hero">
+		<motion.section
+			className="grid justify-center items-center gap-10 text-center"
+			id="hero"
+			variants={fadeInUp}
+			initial="initial"
+			animate="animate"
+		>
 			<h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-7xl font-bold">
 				<span className="text-pink-400">Freshly Baked</span> <br /> 
 				Donuts & Happiness
@@ -22,7 +30,7 @@ const Hero = () => {
 				</Button>
 			</div>
 			<Customers />
-		</section>
+		</motion.section>
 	)
 }
 

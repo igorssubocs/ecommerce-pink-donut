@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+import { staggerItem } from '../../../utils/animations'
+
 const FilterFlavor = ({ flavors, watch, setValue }) => {
 	const selected = watch("flavors") || []
 
@@ -13,7 +16,7 @@ const FilterFlavor = ({ flavors, watch, setValue }) => {
 			<h2 className="font-medium text-lg mb-5">Flavors</h2>
 			<ul className="space-y-2">
 				{flavors.map(flavor => (
-					<li key={flavor}>
+					<motion.li key={flavor} variants={staggerItem}>
 						<label className="flex items-center gap-2 cursor-pointer hover:text-pink-500">
 							<input
 								type="checkbox"
@@ -23,7 +26,7 @@ const FilterFlavor = ({ flavors, watch, setValue }) => {
 							/>
 							<span>{flavor}</span>
 						</label>
-					</li>
+					</motion.li>
 				))}
 			</ul>
 		</div>

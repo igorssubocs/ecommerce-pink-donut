@@ -1,12 +1,19 @@
 import { useFlavors } from "../../../hooks/useFlavors"
 import FilterFlavor from "./FilterFlavor"
 import FilterPrice from "./FilterPrice"
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../../../utils/animations'
 
 const Filters = ({ register, watch, setValue, onReset }) => {
 	const flavors = useFlavors()
 
 	return (
-		<div className="grid gap-4 bg-white rounded-3xl p-7">
+		<motion.div 
+			className="grid gap-4 bg-white rounded-3xl p-7" 
+			variants={staggerContainer} 
+			initial="initial" 
+			animate="animate"
+		>
 			<div className="flex justify-between items-center">
 				<h2 className="font-medium text-2xl">Filters</h2>
 				<button 
@@ -27,7 +34,7 @@ const Filters = ({ register, watch, setValue, onReset }) => {
 				watch={watch}
 				setValue={setValue}
 			/>
-		</div>
+		</motion.div>
 	)
 }
 

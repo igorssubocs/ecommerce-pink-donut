@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
+import { motion } from "framer-motion"
+import { fadeInUp } from '../../../utils/animations'
 import { useProducts } from '../../../hooks/useProducts'
 import ProductCard from '../../ui/card/ProductCard'
 import Loading from '../../ui/loading/Loading'
@@ -12,7 +14,13 @@ export default function Products() {
 	}
 
 	return (
-		<section className='mx-auto' id="products">
+		<motion.section
+			className='mx-auto'
+			id="products"
+			variants={fadeInUp}
+			initial="initial"
+			animate="animate"
+		>
 			<div className="flex justify-between items-center">
 				<h2 className="font-bold text-4xl sm:text-5xl md:text-6xl mb-10">
 					Our Products
@@ -26,6 +34,6 @@ export default function Products() {
 					<ProductCard key={product.id} product={product} />
 				))}
 			</div>
-		</section>
+		</motion.section>
 	)
 }

@@ -1,10 +1,12 @@
 import { Minus, Plus, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { formatPrice } from '../../../utils/formatPrice'
+import { staggerItem } from '../../../utils/animations'
 
 const CartItem = ({ item, onIncrease, onDecrease, onRemove }) => {
 	return (
-		<div className="flex p-2 justify-between items-center bg-white rounded-3xl">
+		<motion.div className="flex p-2 justify-between items-center bg-white rounded-3xl" variants={staggerItem}>
 			<div className="flex gap-4 items-center">
 				<Link to={`/product/${item.product.path}`}>
 					<img 
@@ -48,7 +50,7 @@ const CartItem = ({ item, onIncrease, onDecrease, onRemove }) => {
 					<X className="w-5 h-5" />
 				</button>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

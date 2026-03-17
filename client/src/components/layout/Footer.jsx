@@ -1,4 +1,5 @@
-import { NavLink, Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 import { LOGO } from '../../assets/assets'
 
 const Footer = () => {
@@ -73,9 +74,9 @@ const Footer = () => {
 							<ul className="flex flex-col gap-1 text-center sm:text-left">
 								{supportLinks.map((link) => (
 									<li key={link.name}>
-										<Link to={link.to} className="hover:text-pink-400">
+										<HashLink smooth to={link.to} className="hover:text-pink-400">
 											{link.name}
-										</Link>
+										</HashLink>
 									</li>
 								))}
 							</ul>

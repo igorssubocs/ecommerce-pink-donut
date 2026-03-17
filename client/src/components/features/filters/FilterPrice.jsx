@@ -1,6 +1,9 @@
+import { motion } from 'framer-motion'
+import { staggerItem } from '../../../utils/animations'
+
 const FilterPrice = ({ register }) => {
 	return (
-		<div>
+		<motion.div variants={staggerItem}>
 			<h2 className="font-medium text-lg mb-5">Price Range</h2>
 			<div className="flex gap-4">
 				<div className="flex-1">
@@ -26,7 +29,7 @@ const FilterPrice = ({ register }) => {
 					/>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

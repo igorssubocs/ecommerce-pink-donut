@@ -1,9 +1,17 @@
+import { motion } from "framer-motion"
+import { fadeInUp } from "../../../utils/animations"
 import { PHONE } from "../../../assets/assets"
 import Button from "../../ui/button/Button"
 
 const Delivery = () => {
 	return (
-		<section className="mx-auto bg-white rounded-[64px] overflow-hidden" id="delivery">
+		<motion.section
+			className="mx-auto bg-white rounded-[64px] overflow-hidden"
+			id="delivery"
+			variants={fadeInUp}
+			initial="initial"
+			animate="animate"
+		>
 			<div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-end">
 				<div className="flex flex-col space-y-5 lg:space-y-10 max-w-xl p-20">
 					<div className="space-y-3 lg:space-y-5">
@@ -30,7 +38,7 @@ const Delivery = () => {
 					/>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 

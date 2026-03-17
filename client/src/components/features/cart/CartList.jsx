@@ -1,8 +1,15 @@
 import CartItem from './CartItem'
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../../../utils/animations'
 
 const CartList = ({ items, onIncrease, onDecrease, onRemove }) => {
 	return (
-		<div className="space-y-3">
+		<motion.div
+			className="space-y-3"
+			variants={staggerContainer}
+			initial="initial"
+			animate="animate"
+		>
 			{items.map(item => (
 				<CartItem
 					key={item.product._id}
@@ -12,7 +19,7 @@ const CartList = ({ items, onIncrease, onDecrease, onRemove }) => {
 					onRemove={() => onRemove(item.product._id)}
 				/>
 			))}
-		</div>
+		</motion.div>
 	)
 }
 

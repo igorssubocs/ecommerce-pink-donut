@@ -1,7 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { motion } from 'framer-motion'
 import { useCart } from '../../../hooks/useCart'
 import { formatPrice } from '../../../utils/formatPrice'
+import { cardInteractive, fadeInUp } from '../../../utils/animations'
 import Button from '../button/Button'
 
 const ProductCard = ({ product }) => {
@@ -20,13 +22,21 @@ const ProductCard = ({ product }) => {
 	}
 
 	return (
-		<div className="h-full flex flex-col p-2 space-y-6 rounded-3xl bg-white">
+		<motion.div
+			className="h-full flex flex-col p-2 space-y-6 rounded-3xl bg-white"
+			variants={cardInteractive}
+			initial="initial"
+			animate="animate"
+		>
 			<div className="space-y-3">
 				<Link to={`/product/${product.path}`}>
-					<img
+					<motion.img
 						src={product.images[0]}
 						alt={product.name}
 						className="w-full h-48 object-cover rounded-2xl"
+						initial="rest"
+						whileHover="hover"
+						whileTap="tap"
 					/>
 				</Link>
 				<div className="flex justify-between items-start font-semibold text-lg">
@@ -46,7 +56,7 @@ const ProductCard = ({ product }) => {
 					Add to Cart
 				</Button>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

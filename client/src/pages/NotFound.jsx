@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom'
 import Button from '../components/ui/button/Button'
+import { motion } from 'framer-motion'
+import { pageTransition } from '../utils/animations'
 
 const NotFound = () => {
 	return (
-		<div className="h-full flex items-center justify-center" id="notfound">
+		<motion.div 
+			className="h-full flex items-center justify-center" id="notfound"
+			variants={pageTransition}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+		>
 			<div className="text-center space-y-5">
 				<div className="space-y-3">
 					<h1 className="text-9xl font-bold text-pink-400">404</h1>
@@ -22,7 +30,7 @@ const NotFound = () => {
 					Back to Home
 				</Button>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
